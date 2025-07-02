@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" autocomplete="on">
+        <h2>Registration Form</h2>
+    <table>
+        <tr>
+        <th><label for="fullname">Full Name :</label></th>
+        <td><input type="text" id="fullname" maxlength="15" size="20" placeholder="ex:Boobathi .A" required></td>
+        </tr>
+        <tr>
+            <th> <label for="email"> Email :</label></th>
+            <td><input type="email" id="email" maxlength="30" size="20" placeholder="ex: example@gmail.com" required
+                inputmode="email"></td>
+        </tr>
+        <tr>
+            <th><label for="phone">Phone : </label></th>
+            <td>
+                <input type="tel" name="phone" id="phone" size="20" maxlength="13" inputmode="numeric" pattern="[6-9][0-9]{9}">
+            </td>
+        </tr>
+        <tr>
+            <th> <label for="dob">Date of Birth : </label></th>
+            <td> 
+                <input type="date" name="DOB" id="dob">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="address">Address : </label></th>
+            <td>
+                <textarea name="address" id="address" cols="30" rows="6"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th> <label for="password">Password :</label> </th>
+            <td><input type="password" id="password" size="20" placeholder="must contain symbols" required></td>
+        </tr>
+        <tr>
+            <th><label>Gender : </label></th>
+            <td>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Skills : </th>
+            <td >
+                <input type="checkbox" id="skill1" name="skill1" value="C#">
+                <label for="skill1">C#</label><br>
+                <input type="range" min="1" max="100">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="skill2" name="skill2" value="SQL-server">
+                <label for="skill2">SQL-server</label><br>
+                <input type="range" min="1" max="100" id="skill2">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >
+                <input type="checkbox" id="skill3" name="skill3" value="HTML">
+                <label for="skill3">HTML</label><br>
+                <input type="range" min="1" max="100" >
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >
+                <input type="checkbox" id="skill4" name="skill4" value="CSS">
+                <label for="skill4">CSS</label><br>
+                <input type="range" min="1" max="100">
+            </td>
+        </tr>
+
+        <tr>
+            <th><label for="country">Country : </label></th>
+            <td>
+                <select name="country" id="country">
+                    <option value="India" selected>India</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th> <label for="profession">Profession :</label> </th>
+            <td>
+            <input list="profession-list" id="profession" name="profession">
+            <datalist id="profession-list">
+                <option value="Student">
+                <option value="Employee">
+                <option value="Politician">
+            </datalist>
+        </td>
+        </tr>
+
+        <tr>
+            <th><label for="photo"> Photo : </label></th>
+            <td>
+                <input type="file" id="Photo" name="photo" accept="image/.jpeg">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="reset" value="reset">
+            </th>
+            <td>
+                <input type="submit" value="submit">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
